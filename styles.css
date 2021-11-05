@@ -1,0 +1,68 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262835;
+    color: white;
+    align-items: flex-start;
+    margin-left: 2px;
+    justify-content: flex-start;
+}
+
+.prompt-current {
+    font-size: 17px;
+    bottom: 50px;
+    position: fixed;
+    font-weight: bold;
+    font-family: VT323, monospace;
+    letter-spacing: 1px;
+}
+
+.prompt-historic {
+    font-size: 17px;
+    bottom: 70px;
+    position: fixed;
+    font-family: VT323, monospace;
+    letter-spacing: 1px;
+}
+
+.btn-bottom {
+    bottom: 3px;
+    position: fixed;
+}
+
+.title {
+    font-size: 30px;
+    position: sticky;
+    top: 1px;
+    font-family: Prompt, sans-serif;
+    font-weight: 300;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.btn {
+    background-color: #4A646C;
+    border: 2px solid #8D9597;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    bottom: 3px;
+    margin-right: 3px;
+    font-family: Oxygen, sans-serif;
+    font-weight: 400;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+span{
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {opacity: 0;}
+}
