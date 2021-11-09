@@ -75,7 +75,7 @@ const textNodes = [
     {
         id: 1,
         text: "Life is so unfair! You are sent to your room as punishment for disgracing your uncl... step-father again." +
-            "Claudius is so much worse compared to your dad who died out of nowhere! You don't understand why you need to respect " +
+            " Claudius is so much worse compared to your dad who died out of nowhere! You don't understand why you need to respect " +
             "that horrible man or your disgraceful mother. Suddenly, there is a knock on your door.",
         scene: "Hamlet's Room",
         options: [
@@ -91,7 +91,7 @@ const textNodes = [
     },
     {
         id: 2,
-        text: "You open the door and Horatio, your close fri end comes rushing in telling you that he spotted a ghost in " +
+        text: "You open the door and Horatio, your close friend comes rushing in telling you that he spotted a ghost in " +
             "the image of your father at midnight! Intrigued you tell Horatio that you will try and meet this supposed " +
             "ghost tonight. <br> Shortly the night falls and you leave your room, there are two ways down the hallway",
         scene: "Hamlet's Room | Hallway",
@@ -240,7 +240,7 @@ const textNodes = [
             },
             {
                 text: "Head to your mothers room",
-                nextText: 13
+                nextText: 14
             },
         ]
     },
