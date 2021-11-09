@@ -1,3 +1,4 @@
+const imageElement = document.getElementById("scene-image")
 const sceneElement = document.getElementById("current-scene")
 const textElement = document.getElementById("current-prompt")
 const historicElement = document.getElementById("historic-prompt")
@@ -6,6 +7,23 @@ const typeSpeed = 50;
 
 var promptNum = 0;
 let state = {}
+
+var images = {
+    "Hamlet's Room": "/images/Hamlets-Room.jpg",
+    "Hamlet's Room | Hallway": "/images/Hallway.jpg",
+    "Hallway": "/images/Hallway.jpg",
+    "Balcony": "/images/Balcony.jpg",
+    "Lobby": "/images/Lobby.jpg",
+    "Ballroom": "/images/Ballroom.jpg",
+    "Queen's Bedroom": "/images/Queens-Bedroom.jpg",
+    "Prison": "/images/Prison.jpg",
+    "Inn Room": "/images/Inn-Room.jpg",
+    "England": "/images/England.jpg",
+    "Courtyard": "/images/Courtyard.jpg",
+    "Throne Room": "/images/Throne-Room.jpg",
+    "Inn": "/images/Inn-Room.jpg",
+    "Plaza": "/images/Plaza.jpg"
+}
 
 function startGame() {
     state = {}
@@ -36,6 +54,7 @@ function typewriter(text) {
 
 function showTextNode (textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+    imageElement.src = images[textNode.scene]
     sceneElement.innerHTML = textNode.scene
     textElement.innerHTML = "> " + textNode.text
     //typewriter(textNode.text)
