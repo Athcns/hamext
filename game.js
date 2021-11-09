@@ -648,7 +648,7 @@ const textNodes = [
     },
     {
         id: 42,
-        text: "You eventually can't take the stares anymore and smash your head into the wall till you bled to death.<br>You are know as the" +
+        text: "You eventually can't take the stares anymore and smash your head into the wall till you bled to death.<br>You are known as the" +
             " crazy prince that was cursed by the devil.",
         scene: "Hamlet's Room",
         options: [
