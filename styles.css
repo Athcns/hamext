@@ -10,10 +10,18 @@ body {
     justify-content: flex-start;
 }
 
+.scene-current {
+    font-size: 19px;
+    margin-top: auto;
+    font-weight: bold;
+    font-family: VT323, monospace;
+    letter-spacing: 1px;
+    color: paleturquoise;
+}
+
 .prompt-current {
     font-size: 17px;
-    bottom: 50px;
-    position: fixed;
+    margin-top: auto;
     font-weight: bold;
     font-family: VT323, monospace;
     letter-spacing: 1px;
@@ -21,15 +29,14 @@ body {
 
 .prompt-historic {
     font-size: 17px;
-    bottom: 70px;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
     font-family: VT323, monospace;
     letter-spacing: 1px;
 }
 
 .btn-bottom {
-    bottom: 3px;
-    position: fixed;
+    margin-top: auto;
 }
 
 .title {

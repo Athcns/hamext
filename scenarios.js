@@ -1,76 +1,3 @@
-const sceneElement = document.getElementById("current-scene")
-const textElement = document.getElementById("current-prompt")
-const historicElement = document.getElementById("historic-prompt")
-const optionButtonsElement = document.getElementById("option-buttons")
-const typeSpeed = 50;
-
-var promptNum = 0;
-let state = {}
-
-function startGame() {
-    state = {}
-    showTextNode(1)
-}
-
-// Function that creates the typewriter effect for the scenarios
-function typewriter(text) {
-    // Displays the previous scenarios
-    if (promptNum != 0) {
-        var tempHistoric = historicElement.innerHTML + "<br>" + textElement.innerHTML;
-        historicElement.innerHTML = tempHistoric.replace("<span>|</span>", "");
-        textElement.innerHTML = "";
-    }
-    promptNum++;
-
-    textPosition = 0;
-    var loop = setInterval(function() {
-        if (textPosition < text.length + 1) {
-            textElement.innerHTML = "> " + text.substring(0, textPosition) + "<span>|</span>";
-            textPosition++;
-        }
-        else {
-            clearInterval(loop);
-        }
-    }, typeSpeed)
-}
-
-function showTextNode (textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-    sceneElement.innerHTML = textNode.scene
-    textElement.innerHTML = "> " + textNode.text
-    //typewriter(textNode.text)
-
-    while (optionButtonsElement.firstChild) {
-        optionButtonsElement.removeChild(optionButtonsElement.firstChild)
-    }
-
-    textNode.options.forEach(option => {
-        if (showOption(option)) {
-            const button = document.createElement("button")
-            button.innerText = option.text
-            button.classList.add("btn")
-            button.addEventListener("click", () => selectOption(option))
-            optionButtonsElement.appendChild(button)
-
-        }
-    })
-}
-
-function showOption(option) {
-    return option.requiredState == null || option.requiredState(state)
-}
-
-function selectOption(option) {
-    const nextTextNodeId = option.nextText
-    if (nextTextNodeId <= 0) {
-        promptNum = 0;
-        historicElement.innerHTML = "";
-        return startGame();
-    }
-    state = Object.assign(state, option.setState)
-    showTextNode(nextTextNodeId)
-}
-
 const textNodes = [
     {
         id: 1,
@@ -202,7 +129,7 @@ const textNodes = [
     },
     {
         id: 10,
-        text: "As you watch the play... nothing comes to mind. You just feel disappointed and as time passes on your depressions carries forward.",
+        text: "As you watch the play... nothing comes to mind. You just feel disappointed and as time passes on your depressions carries forward." +,
         scene: "Lobby",
         options: [
             {
@@ -251,12 +178,12 @@ const textNodes = [
         options: [
             {
                 text: "Put the gun in your pocket",
-                setState: { hasGun: true },
+                setState: { hasGun: true; },
                 nextText: 15
             },
             {
                 text: "Leave the gun there",
-                setState: { hasGun: false },
+                setState: { hasGun: false; },
                 nextText: 15
             },
         ]
@@ -307,7 +234,7 @@ const textNodes = [
         options: [
             {
                 text: "Drag the body out",
-                setState: { enemyLaertes: true },
+                setState: { enemyLaertes: true }
                 nextText: 18
             }
         ]
@@ -472,7 +399,7 @@ const textNodes = [
             {
                 text: "Hide with Horatio",
                 nextText: 29
-            },
+            }
             {
                 text: "Continue talking",
                 nextText: 60
@@ -815,7 +742,7 @@ const textNodes = [
         scene: "Queen's Bedroom",
         options: [
             {
-                text: "Head to your room",
+                text: "Head to your room,
                 setState: { enemyLaertes: false },
                 nextText: 55
             }
@@ -921,5 +848,3 @@ const textNodes = [
         ]
     },
 ]
-
-startGame()
