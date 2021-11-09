@@ -516,7 +516,7 @@ const textNodes = [
     },
     {
         id: 30,
-        text: "Out of anger you run at Laertes and begin to fight him. You are both restrained and brought to seperate rooms.",
+        text: "Out of anger you run at Laertes and begin to fight him. You are both restrained and brought to separate rooms.",
         scene: "Courtyard",
         options: [
             {
@@ -739,7 +739,7 @@ const textNodes = [
     },
     {
         id: 48,
-        text: "Days pass by with nothing happpening. You are left alone to do whatever crazy acts you wished. Someone knocks on your door.",
+        text: "Days pass by with nothing happening. You are left alone to do whatever crazy acts you wished. Someone knocks on your door.",
         scene: "Hamlet's Room",
         options: [
             {
@@ -829,7 +829,7 @@ const textNodes = [
     },
     {
         id: 54,
-        text: "Deciding not to reveal the truth to the queen, you have a fairly normal conversation. She asks about your wellbeing and acts as if she was a loving mother. However, in annoyance and disgust" +
+        text: "Deciding not to reveal the truth to the queen, you have a fairly normal conversation. She asks about your well being and acts as if she was a loving mother. However, in annoyance and disgust" +
             " you act crazy in order to scare her. Eventually she is frightened and you are dismissed to your room.",
         scene: "Queen's Bedroom",
         options: [
@@ -867,7 +867,7 @@ const textNodes = [
     },
     {
         id: 57,
-        text: "You ignore the gravekeeper and continue to walk with Horatio around the castle. After some time, you encounter Laertes and he seems enraged at the sight of you." +
+        text: "You ignore the grave keeper and continue to walk with Horatio around the castle. After some time, you encounter Laertes and he seems enraged at the sight of you." +
             " Out of nowhere he challenges you to a duel.",
         scene: "Hallway",
         options: [
@@ -895,7 +895,7 @@ const textNodes = [
     {
         id: 59,
         text: "As you decide to go on a walk outside, suddenly someone out of nowhere comes and stabs you. You look and see that it is Laertes who seemed to have lost" +
-            " his train of thought as he had eyes only filled with bloodlust. You start to fade out and die from bleeding out. You were known to be the unfortunate prince.",
+            " his train of thought as he had eyes only filled with blood lust. You start to fade out and die from bleeding out. You were known to be the unfortunate prince.",
         scene: "Hallway",
         options: [
             {
@@ -929,7 +929,7 @@ const textNodes = [
     },
     {
         id: 62,
-        text: "Supressing your anger and saddness, you continue to hide with Horatio and watch the ceremony. You later get up and walk back to your room with Horatio" +
+        text: "Suppressing your anger and sadness, you continue to hide with Horatio and watch the ceremony. You later get up and walk back to your room with Horatio" +
             " while filled with negative emotions.",
         scene: "Courtyard",
         options: [
