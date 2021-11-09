@@ -9,20 +9,20 @@ var promptNum = 0;
 let state = {}
 
 var images = {
-    "Hamlet's Room": "/images/Hamlets-Room.jpg",
-    "Hamlet's Room | Hallway": "/images/Hallway.jpg",
-    "Hallway": "/images/Hallway.jpg",
-    "Balcony": "/images/Balcony.jpg",
-    "Lobby": "/images/Lobby.jpg",
-    "Ballroom": "/images/Ballroom.jpg",
-    "Queen's Bedroom": "/images/Queens-Bedroom.jpg",
-    "Prison": "/images/Prison.jpg",
-    "Inn Room": "/images/Inn-Room.jpg",
-    "England": "/images/England.jpg",
-    "Courtyard": "/images/Courtyard.jpg",
-    "Throne Room": "/images/Throne-Room.jpg",
-    "Inn": "/images/Inn-Room.jpg",
-    "Plaza": "/images/Plaza.jpg"
+    "Hamlet's Room": "images/Hamlets-Room.jpg",
+    "Hamlet's Room | Hallway": "images/Hallway.jpg",
+    "Hallway": "images/Hallway.jpg",
+    "Balcony": "images/Balcony.jpg",
+    "Lobby": "images/Lobby.jpg",
+    "Ballroom": "images/Ballroom.jpg",
+    "Queen's Bedroom": "images/Queens-Bedroom.jpg",
+    "Prison": "images/Prison.jpg",
+    "Inn Room": "images/Inn-Room.jpg",
+    "England": "images/England.jpg",
+    "Courtyard": "images/Courtyard.jpg",
+    "Throne Room": "images/Throne-Room.jpg",
+    "Inn": "images/Inn-Room.jpg",
+    "Plaza": "images/Plaza.jpg"
 }
 
 function startGame() {
