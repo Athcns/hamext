@@ -8,7 +8,6 @@
 
 ## Tools/Language Used
 - Webstorm (created by JetBrains)
-- HTML, CSS, and JavaScript (Frontend)
-- Python (Backend)
+- HTML, CSS, and JavaScript 
 - Bootstrap (an API for frontend development)
 
