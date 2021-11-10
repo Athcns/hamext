@@ -353,11 +353,14 @@ const textNodes = [
     },
     {
         id: 19,
-        text: "The king enraged charges you for treason. You are imprisoned and are shortly killed in secret",
+        text: "The king enraged charges you for treason. <span class='death'>You are imprisoned and are shortly killed in secret</span>",
         scene: "Prison",
         options: [
             {
-                text: "Failed... Restart",
+                text: "You have found an unfortunate ending"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -378,7 +381,7 @@ const textNodes = [
             },
             {
                 text: "Stay silent",
-                nextText: 20
+                nextText: 63
             },
         ]
     },
@@ -558,11 +561,14 @@ const textNodes = [
     },
     {
         id: 33,
-        text: "THUD! Your vision begins to blur and you die by the poisoned drink",
+        text: "THUD! Your vision begins to blur and <span class='death'>you die by the poisoned drink</span>",
         scene: "Throne Room",
         options: [
             {
-                text: "Failed... Restart",
+                text: "You have found a poisoned ending"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -588,11 +594,14 @@ const textNodes = [
     {
         id: 35,
         text: "The guards confused, rush at you and stop you from attacking the king. You are charged with treason. As you are being dragged" +
-            " out of the throne room, your vision begins to fade as your sword wound pulses. You succumb to the poison and die.",
+            " out of the throne room, your vision begins to fade as your sword wound pulses. <span class='death'>You succumb to the poison and die.</span>",
         scene: "Throne Room",
         options: [
             {
-                text: "Failed... Restart",
+                text: "You have found a poisoned ending"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -611,11 +620,15 @@ const textNodes = [
     {
         id: 37,
         text: "As your vision begins to falter, you attack the king with the sword and shove the drink down his mouth. The king falls and dies." +
-            "<br>You slowly fall to the poison and tell Horatio to share the true story to all the citizen . You shortly die.",
+            "<br>You slowly fall to the poison and tell Horatio to share the true story to all the citizen . <span class='death'>You shortly die.</span>",
         scene: "Prison",
         options: [
             {
                 text: "Congrats on the original ending. It's a Shakespeare tragedy so of course the true ending you die."
+            },
+            {
+                text: "Restart",
+                nextText: -1
             }
         ]
     },
@@ -667,12 +680,15 @@ const textNodes = [
     },
     {
         id: 42,
-        text: "You eventually can't take the stares anymore and smash your head into the wall till you bled to death.<br>You are known as the" +
+        text: "<span class='death'>You eventually can't take the stares anymore and smash your head into the wall till you bled to death.</span><br>You are known as the" +
             " crazy prince that was cursed by the devil.",
         scene: "Hamlet's Room",
         options: [
             {
-                text: "Failure... Restart",
+                text: "You have found the ending of the Crazy Prince"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -680,12 +696,15 @@ const textNodes = [
     {
         id: 43,
         text: "Life doesn't seem so precious. You aren't like Pyrrhus who had the courage to kill. As time passes by you start staying in your room more" +
-            ". As time passes by you suddenly feel incredibly sick after eating one of the meals brought by a maid. You are bedridden and known to Denmark as the" +
-            " sad prince that died in his room.",
+            ". As time passes by you suddenly feel incredibly sick after eating one of the meals brought by a maid. <span class='death'>You are bedridden and known to Denmark as the" +
+            " sad prince that died in his room.</span>",
         scene: "Hamlet's Room",
         options: [
             {
-                text: "Failure... Restart",
+                text: "You have found the ending of the Sad Prince"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -717,11 +736,14 @@ const textNodes = [
         id: 46,
         text: "Oddly enough, no one appears for you. Not to release you or to feed you. It is dead silent in the small room with the only sound being the" +
             " water drop dripping. Eventually Horatio appears but brings news that the King has ordered no one to come help you as you tried to kill the king." +
-            " You die due to starvation and are left to be known as the mad prince.",
+            " <span class='death'>You die due to starvation and are left to be known as the mad prince.</span>",
         scene: "Prison",
         options: [
             {
-                text: "Failure... Restart",
+                text: "You have found the ending of the Mad Prince"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -791,12 +813,15 @@ const textNodes = [
     },
     {
         id: 52,
-        text: "Out of nowhere, guards come running at you and put you under arrest. You are suspected for treason by the king of England and are" +
-            " murdered in England.",
+        text: "Out of nowhere, guards come running at you and put you under arrest. <span class='death'>You are suspected for treason by the king of England and are" +
+            " murdered in England.</span>",
         scene: "Plaza",
         options: [
             {
-                text: "Failed... Restart",
+                text: "You have found the ending of the Betrayed Prince"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -855,12 +880,15 @@ const textNodes = [
     {
         id: 56,
         text: "You successfully return to Denmark and wait for an opportunity to kill Claudius. Finally a moment appears where Claudius has his back to you and you take the chance" +
-            " to strike him. You manage to kill him but are imprisoned by the guards for killing the king. You eventually die in the prison cell to be known as a" +
-            "horrible prince.",
+            " to strike him. You manage to kill him but are imprisoned by the guards for killing the king. <span class='death'>You eventually die in the prison cell to be known as a" +
+            "horrible prince.</span>",
         scene: "Throne Room",
         options: [
             {
-                text: "Failed... Restart",
+                text: "You have found the ending of the Cruel Prince"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -895,11 +923,14 @@ const textNodes = [
     {
         id: 59,
         text: "As you decide to go on a walk outside, suddenly someone out of nowhere comes and stabs you. You look and see that it is Laertes who seemed to have lost" +
-            " his train of thought as he had eyes only filled with blood lust. You start to fade out and die from bleeding out. You were known to be the unfortunate prince.",
+            " his train of thought as he had eyes only filled with blood lust. <span class='death'>You start to fade out and die from bleeding out</span>. You were known to be the unfortunate prince.",
         scene: "Hallway",
         options: [
             {
-                text: "Failure... Restart",
+                text: "You have found the ending of the Unfortunate Prince"
+            },
+            {
+                text: "Restart",
                 nextText: -1
             }
         ]
@@ -936,6 +967,40 @@ const textNodes = [
             {
                 text: "Go to your room",
                 nextText: 31
+            }
+        ]
+    },
+    {
+        id: 63,
+        text: "The king is tired of you being silent and gives you one more chance to say where Polonius's body is. He may kill you if you refuse.",
+        scene: "Prison",
+        options: [
+            {
+                text: "Tell the king the location",
+                nextText: 21
+            },
+            {
+                text: "Spit at the king and say no",
+                nextText: 19
+            },
+            {
+                text: "Stay silent",
+                nextText: 64
+            },
+        ]
+    },
+    {
+        id: 64,
+        text: "The king tired of your foolish game, locks you into the prison and never returns. <span class='death'>Eventually you starve to death.</span>",
+        scene: "Prison",
+        options: [
+            {
+                text: "You chose to die so stubbornly. You have found an unfortunate ending.",
+                nextText: 21
+            },
+            {
+                text: "Restart",
+                nextText: -1
             }
         ]
     },
