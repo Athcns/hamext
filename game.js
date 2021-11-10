@@ -314,7 +314,7 @@ const textNodes = [
             },
             {
                 text: "Do nothing (NO WEAPON)",
-                nextText: 52
+                nextText: 65
             },
         ]
     },
@@ -827,7 +827,7 @@ const textNodes = [
         ]
     },
     {
-        id: 52,
+        id: 65,
         text: "With no weapon in hand, you aren't able to kill the rat hiding behind the wall. The guards come rushing in and grab you. As they are restraining you," +
             " the king walks in and tell you that you will be sent to England with your friends, Rosencratz and Guildenstern to... recuperate.",
         scene: "Queen's Bedroom",
@@ -880,7 +880,7 @@ const textNodes = [
     {
         id: 56,
         text: "You successfully return to Denmark and wait for an opportunity to kill Claudius. Finally a moment appears where Claudius has his back to you and you take the chance" +
-            " to strike him. You manage to kill him but are imprisoned by the guards for killing the king. <span class='death'>You eventually die in the prison cell to be known as a" +
+            " to strike him. You manage to kill him but are imprisoned by the guards for killing the king. <span class='death'>You eventually die in the prison cell to be known as a " +
             "horrible prince.</span>",
         scene: "Throne Room",
         options: [
